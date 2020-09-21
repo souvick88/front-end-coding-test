@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnrolleeService } from './enrolleeService';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private enroleeService: EnrolleeService) { }
   title = 'front-end-coding-test';
+  // myName = this.enroleeService.name;
 }
